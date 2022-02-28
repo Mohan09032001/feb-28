@@ -1,0 +1,13 @@
+list1=[]
+list2=[]
+n=int(input('enter no of elements:'))
+for i in range(n):
+	x=input()
+	list1.append(x)
+for i in list1:
+        j=list1.count(i)
+
+        if(j%2!=0):
+            if i not in list2:
+                list2.append(i)
+                print(i, end="")
